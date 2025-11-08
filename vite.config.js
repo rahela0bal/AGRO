@@ -6,6 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Proiect_An_Agro/', // Numele repository-ului tău
   plugins: [
     vue(),
     vueDevTools(),
