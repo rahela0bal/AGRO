@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Proiect_An_Agro/', // Numele repository-ului tău
+  base:"",
   plugins: [
     vue(),
     vueDevTools(),
@@ -16,9 +16,4 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  server: {
-    host: '0.0.0.0',  // asta permite accesul din afara containerului
-    port: 5173,        // asigură-te că portul nu e folosit de alt proiect
-    strictPort: true,  // opțional: eșuează dacă portul e ocupat
-  }
 })
