@@ -14,6 +14,7 @@ import ClickToLink from '../generalFeatures/ClickToLink.vue';
 <ClickToLink textButton="Postarile Mele" linkPath="/posarileMele" />
 <ClickToLink textButton="Calendarul Meu" linkPath="/calendarulMeu" />
 <ClickToLink textButton="Furnizorii Mei" linkPath="/furnizoriiMei" />
+<ClickToLink textButton="Sign In" linkPath="/signIn" />
 
 </div>
 </template>

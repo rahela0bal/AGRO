@@ -14,6 +14,8 @@ import CalendarulMeu from '@/components/fermaMea/CalendarulMeu.vue'
 import ContulMeu from '@/components/conturi/ContulMeu.vue'
 import DespreNoi from '@/components/conturi/DespreNoi.vue'
 import SetariCont from '@/components/conturi/SetariCont.vue'
+import SignIn from '@/components/sign/SignIn.vue'
+import FirstView from '@/components/landingPage/FirstView.vue'
 
 const routes = [
   { path: "/", component: FermaMea },
@@ -27,14 +29,15 @@ const routes = [
   { path: "/contulMeu", component: ContulMeu },
   { path: "/despreNoi", component: DespreNoi },
   { path: "/setariCont", component: SetariCont },
-
+  {path: "/firstView", component: FirstView },
 
 
   {path: "/animaleleMele", component: AnimaleleMele },
-  {path: "/proprietaileMele", component: ProprietatileMele },
+  {path: "/proprietatileMele", component: ProprietatileMele },
   {path: "/postarileMele", component: PostarileMele },
   {path: "/calendarulMeu", component: CalendarulMeu },
-  {path: "/furnizoriiMei", component: FurnizoriiMei }
+  {path: "/furnizoriiMei", component: FurnizoriiMei },
+  {path: "/signIn", component: SignIn }
 ]
 
 const router = createRouter({

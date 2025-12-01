@@ -6,7 +6,6 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
 
 <header>
-  <h1 class="text-3xl font-bold underline"></h1>
         <nav>
             <RouterLink to="/fermaMea">Ferma Mea</RouterLink>
             <RouterLink to="/conversatii">Conversatii</RouterLink>
@@ -18,8 +17,9 @@ import { RouterLink, RouterView } from 'vue-router'
             <RouterLink to="/contulMeu">Contul Meu</RouterLink>
             <RouterLink to="/despreNoi">Despre Noi</RouterLink>
             <RouterLink to="/setariCont">Setari Cont</RouterLink>
-
+            <RouterLink to="/sign">Sign</RouterLink>
         </nav>
+        <RouterView />
     </header>
     
 </template>

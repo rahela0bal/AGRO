@@ -5,7 +5,6 @@ import BaraNavigare from './components/baraNavigare/BaraNavigare.vue';
 
 <template>
   <BaraNavigare />
-  <RouterView />
 </template>
 
 <style>
