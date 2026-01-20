@@ -4,18 +4,18 @@ import Button from '../generalFeatures/Button.vue';
 import Logo from '../generalFeatures/Logo.vue';
 
 const linkSpreSignIn = () => {
-  // Your click handler
+  // click hendreaza(nu stu daca exista) la pagina de sign in
     window.location.href = '/signIn';
 };
 </script>
 
 <template>
-  <!-- Landing background -->
+  <!-- fundal -->
   <div 
     class="landing-background relative flex flex-col items-center justify-center text-center text-white"
     :style="{ backgroundImage: `url(${landingImage})` }"
   >
-    <!-- Button in the top-right corner -->
+    <!-- buton din dreapta  -->
     <div class="absolute top-4 right-4">
       <Button 
         textButton="Sign in" 
