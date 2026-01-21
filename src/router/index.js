@@ -29,19 +29,17 @@ const routes = [
   { path: "/contulMeu", component: ContulMeu },
   { path: "/despreNoi", component: DespreNoi },
   { path: "/setariCont", component: SetariCont },
-  {path: "/firstView", component: FirstView },
-
-
-  {path: "/animaleleMele", component: AnimaleleMele },
-  {path: "/proprietatileMele", component: ProprietatileMele },
-  {path: "/postarileMele", component: PostarileMele },
-  {path: "/calendarulMeu", component: CalendarulMeu },
-  {path: "/furnizoriiMei", component: FurnizoriiMei },
-  {path: "/signIn", component: SignIn }
+  { path: "/firstView", component: FirstView },
+  { path: "/animaleleMele", component: AnimaleleMele },
+  { path: "/proprietatileMele", component: ProprietatileMele },
+  { path: "/postarileMele", component: PostarileMele },
+  { path: "/calendarulMeu", component: CalendarulMeu },
+  { path: "/furnizoriiMei", component: FurnizoriiMei },
+  { path: "/signIn", component: SignIn }
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/AGRO/'),
   routes,
   linkActiveClass: 'btn-primary'
 })
