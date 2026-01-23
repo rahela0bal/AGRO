@@ -1,5 +1,5 @@
 <script setup>
-import Titlul from '../generalFeatures/Titlul.vue';
+import Titlul from '../generalFeatures/Titlul.vue'
 </script>
 
 <template>

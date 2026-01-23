@@ -1,20 +1,17 @@
 <script setup>
-import Button from '../generalFeatures/Button.vue';
-import Titlul from '../generalFeatures/Titlul.vue';
-import ClickToLink from '../generalFeatures/ClickToLink.vue';
-
-
+import Button from '../generalFeatures/Button.vue'
+import Titlul from '../generalFeatures/Titlul.vue'
+import ClickToLink from '../generalFeatures/ClickToLink.vue'
 </script>
 
 <template>
-<div class="p-8">
-<Titlul text="Ferma mea" />
-<ClickToLink textButton="Animalele Mele" linkPath="/animaleleMele" />
-<ClickToLink textButton="Proprietatile Mele" linkPath="/proprietatileMele" />
-<ClickToLink textButton="Postarile Mele" linkPath="/posarileMele" />
-<ClickToLink textButton="Calendarul Meu" linkPath="/calendarulMeu" />
-<ClickToLink textButton="Furnizorii Mei" linkPath="/furnizoriiMei" />
-<ClickToLink textButton="Sign In" linkPath="/signIn" />
-
-</div>
+  <div class="p-8">
+    <Titlul text="Ferma mea" />
+    <ClickToLink text-button="Animalele Mele" link-path="/animaleleMele" />
+    <ClickToLink text-button="Proprietatile Mele" link-path="/proprietatileMele" />
+    <ClickToLink text-button="Postarile Mele" link-path="/posarileMele" />
+    <ClickToLink text-button="Calendarul Meu" link-path="/calendarulMeu" />
+    <ClickToLink text-button="Furnizorii Mei" link-path="/furnizoriiMei" />
+    <ClickToLink text-button="Sign In" link-path="/signIn" />
+  </div>
 </template>

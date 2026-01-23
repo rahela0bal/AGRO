@@ -1,31 +1,32 @@
 <script setup>
-import { ref } from 'vue';
-import { useRouter } from 'vue-router';
-import Titlul from '../generalFeatures/Titlul.vue';
-import Button from '../generalFeatures/Button.vue';
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+import Titlul from '../generalFeatures/Titlul.vue'
+import Button from '../generalFeatures/Button.vue'
 
-const router = useRouter();
+const router = useRouter()
 
-const telefon = ref('');
-const password = ref('');
+const telefon = ref('')
+const password = ref('')
 
 function linkSpreSignIn() {
-  return router.push('/signIn');
+  return router.push('/signIn')
 }
 </script>
 
 <template>
   <div class="incadrare">
     <Titlul text="Good to see you again" />
-    
+
     <eticheta>Nr de telefon</eticheta>
-    <input v-model="telefon" type="number" /> <!-- legatura -->
-    
+    <input v-model="telefon" type="number" />
+    <!-- legatura -->
+
     <eticheta>Password</eticheta>
     <input v-model="password" type="password" />
-    
-    <Button textButton="Sign in" @click="linkSpreSignIn" />
-    
+
+    <Button text-button="Sign in" @click="linkSpreSignIn" />
+
     <a class="forgot">I forgot my password</a>
   </div>
 </template>
@@ -39,7 +40,7 @@ function linkSpreSignIn() {
 }
 
 eticheta {
-display: block; /* forteaza linie noua  */
+  display: block; /* forteaza linie noua  */
   margin-top: 30px;
   margin-bottom: 8px;
 }

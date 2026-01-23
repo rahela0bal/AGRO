@@ -1,15 +1,13 @@
 <script setup>
+import { useRouter } from 'vue-router'
+import Button from './Button.vue'
 
-import { useRouter } from 'vue-router'; 
-import Button from './Button.vue';
-
-const router = useRouter();
+const router = useRouter()
 
 const props = defineProps({
   textButton: String,
   linkPath: String
-});
-
+})
 
 /*
 e funstia veche 
@@ -18,16 +16,13 @@ function mergiLaAnimale() {
 }
   */
 
-  function navigheaza() {
-  router.push(props.linkPath);
+function navigheaza() {
+  router.push(props.linkPath)
 }
-
 </script>
 
 <template>
+  <!-- <Button textButton="Animalele Mele" @click="mergiLaAnimale" />.    asta era inainte -->
 
-<!-- <Button textButton="Animalele Mele" @click="mergiLaAnimale" />.    asta era inainte -->
-
-<Button :textButton="textButton" @click="navigheaza" />
-
+  <Button :text-button="textButton" @click="navigheaza" />
 </template>
