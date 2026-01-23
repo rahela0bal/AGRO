@@ -9,7 +9,7 @@ import ClickToLink from '../generalFeatures/ClickToLink.vue'
     <Titlul text="Ferma mea" />
     <ClickToLink text-button="Animalele Mele" link-path="/animaleleMele" />
     <ClickToLink text-button="Proprietatile Mele" link-path="/proprietatileMele" />
-    <ClickToLink text-button="Postarile Mele" link-path="/posarileMele" />
+    <ClickToLink text-button="Postarile Mele" link-path="/postarileMele" />
     <ClickToLink text-button="Calendarul Meu" link-path="/calendarulMeu" />
     <ClickToLink text-button="Furnizorii Mei" link-path="/furnizoriiMei" />
     <ClickToLink text-button="Sign In" link-path="/signIn" />

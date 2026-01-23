@@ -2,7 +2,6 @@ import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 
 export const useProprietatiStore = defineStore('proprietati', () => {
-  
   const proprietati = ref([
     {
       id: 1,
@@ -34,7 +33,7 @@ export const useProprietatiStore = defineStore('proprietati', () => {
     return proprietati.value.filter((p) => p.hasCamera)
   })
 
-  // ACTIONS 
+  // ACTIONS
   function addProprietate(proprietate) {
     const newProp = {
       id: Date.now(),
@@ -49,14 +48,14 @@ export const useProprietatiStore = defineStore('proprietati', () => {
 
   // accesibil
   return {
-    // State
+    // state
     proprietati,
     loading,
-    // Getters
+    // getters
     totalProprietati,
     totalSuprafata,
     proprietatiCuCamera,
-    // Actions
+    // actions
     addProprietate,
     deleteProprietate
   }

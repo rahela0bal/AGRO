@@ -18,24 +18,24 @@ import SignIn from '@/components/sign/SignIn.vue'
 import FirstView from '@/components/landingPage/FirstView.vue'
 
 const routes = [
-  { path: "/", component: FermaMea },
-  { path: "/fermaMea", component: FermaMea },
-  { path: "/conversatii", component: Conversatii },
-  { path: "/inteligentaArtificiala", component: AI },
-  { path: "/IoT", component: Senzori },
-  { path: "/meteo", component: Meteo },
-  { path: "/vanzare", component: Vanzare },
-  { path: "/cumparare", component: Cumparare },
-  { path: "/contulMeu", component: ContulMeu },
-  { path: "/despreNoi", component: DespreNoi },
-  { path: "/setariCont", component: SetariCont },
-  { path: "/firstView", component: FirstView },
-  { path: "/animaleleMele", component: AnimaleleMele },
-  { path: "/proprietatileMele", component: ProprietatileMele },
-  { path: "/postarileMele", component: PostarileMele },
-  { path: "/calendarulMeu", component: CalendarulMeu },
-  { path: "/furnizoriiMei", component: FurnizoriiMei },
-  { path: "/signIn", component: SignIn }
+  { path: '/', component: FermaMea },
+  { path: '/fermaMea', component: FermaMea },
+  { path: '/conversatii', component: Conversatii },
+  { path: '/inteligentaArtificiala', component: AI },
+  { path: '/IoT', component: Senzori },
+  { path: '/meteo', component: Meteo },
+  { path: '/vanzare', component: Vanzare },
+  { path: '/cumparare', component: Cumparare },
+  { path: '/contulMeu', component: ContulMeu },
+  { path: '/despreNoi', component: DespreNoi },
+  { path: '/setariCont', component: SetariCont },
+  { path: '/firstView', component: FirstView },
+  { path: '/animaleleMele', component: AnimaleleMele },
+  { path: '/proprietatileMele', component: ProprietatileMele },
+  { path: '/postarileMele', component: PostarileMele },
+  { path: '/calendarulMeu', component: CalendarulMeu },
+  { path: '/furnizoriiMei', component: FurnizoriiMei },
+  { path: '/signIn', component: SignIn }
 ]
 
 const router = createRouter({
