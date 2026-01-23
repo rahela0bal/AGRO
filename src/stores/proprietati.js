@@ -22,7 +22,7 @@ export const useProprietatiStore = defineStore('proprietati', () => {
     }
   ])
 
-  //const loading = ref(false)
+  const loading = ref(false)
 
   const totalProprietati = computed(() => proprietati.value.length)
 
