@@ -1,0 +1,28 @@
+workflows:
+  ios-build:
+    name: iOS Build
+    max_build_duration: 60
+    environment:
+      xcode: latest
+      node: 22
+      ios_signing:
+        distribution_type: development
+    scripts:
+      - name: Install dependencies
+        script: |
+          cd app && yarn install
+      - name: Build web app
+        script: |
+          cd app && yarn build
+      - name: Sync Capacitor iOS
+        script: |
+          cd app && yarn cap sync ios
+      - name: Build ipa for development
+        script: |
+          xcode-project build-ipa \
+            --workspace "app/ios/App/App.xcodeproj" \
+            --scheme "App" \
+            --export-options="method: development"
+    artifacts:
+      - app/ios/App/build/**/*.ipa
+      - app/ios/App/build/**/*.app
