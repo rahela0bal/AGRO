@@ -1,0 +1,151 @@
+@mainUrl = http://localhost:3002
+
+
+###
+POST http://localhost:3002/reminder/add
+Content-Type: application/json
+
+{
+  "title": "Vizita la doctor",
+  "date": "2026-04-10",
+  "priority": "high"
+}
+
+###
+POST http://localhost:3002/reminder/add-categorie
+Content-Type: application/json
+
+{
+  "reminderId": 1,
+  "nume": "Sanatate",
+  "culoare": "red"
+}
+
+###
+GET http://localhost:3002/reminder/get-all
+Content-Type: application/json
+
+
+
+
+
+
+
+
+
+
+###
+POST http://localhost:3002/fermier/add
+Content-Type: application/json
+
+{
+  "nume": "Ion Popescu",
+  "email": "ion@ferma.ro"
+}
+
+###
+POST http://localhost:3002/fermier/add-animal
+Content-Type: application/json
+
+{
+  "fermierId": 1,
+  "nume": "Bessie",
+  "specie": "Vaca",
+  "varsta": 3
+}
+
+###
+GET http://localhost:3002/fermier/get-all
+Content-Type: application/json
+
+
+
+
+
+
+
+
+
+
+
+
+###
+POST http://localhost:3002/reminder/add
+Content-Type: application/json
+
+{
+  "title": "Cumpara mancare",
+  "date": "2026-04-06",
+  "priority": "high"
+}
+
+###
+GET http://localhost:3002/reminder/get-all
+Content-Type: application/json
+
+###
+GET {{mainUrl}}/task/get-all
+Content-Type: application/json
+
+###
+POST {{mainUrl}}/task/add
+Content-Type: application/json
+
+{
+  "title": "Learn Sequelize"
+}
+
+###
+DELETE {{mainUrl}}/task/delete
+Content-Type: application/json
+
+{
+  "id": 1
+}
+
+###
+PUT {{mainUrl}}/task/update-title
+Content-Type: application/json
+
+{
+  "id": 1,
+  "newTitle": "Learn Sequelize Updated"
+}
+
+###
+POST {{mainUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin"
+}
+
+
+###
+GET http://localhost:3002/todo/get-all
+Content-Type: application/json
+
+###
+POST http://localhost:3002/todo/add
+Content-Type: application/json
+
+{
+  "title": "Hranesc animalele",
+  "date": "2026-04-23"
+}
+
+###
+POST http://localhost:3002/todo/add-many
+Content-Type: application/json
+
+{
+  "todos": [
+    { "title": "Verific gardul", "date": "2026-04-23" },
+    { "title": "Cumpar furaje", "date": "2026-04-23" }
+  ]
+}
+
+###
+GET http://localhost:3002/todo/get-by-date/2026-04-23
+Content-Type: application/json

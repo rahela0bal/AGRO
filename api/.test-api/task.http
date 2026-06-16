@@ -1,0 +1,21 @@
+@mainUrl = http://localhost:3002
+
+###
+GET {{mainUrl}}/task/get-all
+Content-Type: application/json
+
+###
+POST {{mainUrl}}/task/add
+Content-Type: application/json
+
+{
+  "title": "Learn Sequelize"
+}
+
+###
+DELETE {{mainUrl}}/task/delete
+Content-Type: application/json
+
+{
+  "id": 1
+}

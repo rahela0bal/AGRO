@@ -14,6 +14,17 @@ dist-ssr
 coverage
 *.local
 
+# Deploy keys
+github-deploy-key
+github-deploy-key.pub
+
+# Capacitor native projects
+android
+ios
+
+# Yarn
+.yarn
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -34,14 +45,3 @@ coverage
 
 # Vitest
 __screenshots__/
-
-# Deploy keys
-github-deploy-key
-github-deploy-key.pub
-
-# Capacitor native projects
-app/android
-app/ios
-
-# Yarn
-.yarn
